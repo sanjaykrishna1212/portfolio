@@ -1,1 +1,281 @@
 
+/* Global Styles */
+body
+{
+    font-family: 'Courier New', Courier, monospace;
+    /* Matrix-like font */
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* Black background */
+    color: #00ff00;
+    /* Matrix green text */
+}
+
+/* Header Section */
+header
+{
+    background-color: #000;
+    /* Black background */
+    color: #00ff00;
+    /* Matrix green text */
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1
+{
+    font-size: 48px;
+    margin: 0;
+}
+
+header h2
+{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+header p
+{
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.btn
+{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #000;
+    /* Black text */
+    background-color: #00ff00;
+    /* Matrix green background */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover
+{
+    background-color: #005500;
+    /* Darker green on hover */
+    color: #00ff00;
+    /* Matrix green text on hover */
+}
+
+/* Section Styles */
+section
+{
+    padding: 50px 0;
+    background-color: #000;
+    /* Black background */
+}
+
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#about img
+{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #00ff00;
+    /* Matrix green border */
+}
+
+#about ul
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+#about ul li
+{
+    background-color: #001100;
+    /* Dark green background for list items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #00ff00;
+    /* Matrix green text */
+}
+
+#projects .project
+{
+    margin-bottom: 30px;
+}
+
+#projects .btn
+{
+    margin-right: 10px;
+}
+
+#contact input,
+#contact textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00ff00;
+    /* Matrix green border */
+    border-radius: 5px;
+    background-color: #000;
+    /* Black background */
+    color: #00ff00;
+    /* Matrix green text */
+}
+
+#contact button
+{
+    background-color: #00ff00;
+    /* Matrix green background */
+    color: #000;
+    /* Black text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact button:hover
+{
+    background-color: #005500;
+    /* Darker green on hover */
+    color: #00ff00;
+    /* Matrix green text on hover */
+}
+
+/* Footer Section */
+footer
+{
+    background-color: #000;
+    /* Black background */
+    color: #00ff00;
+    /* Matrix green text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social a
+{
+    color: #00ff00;
+    /* Matrix green text */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover
+{
+    color: #009900;
+    /* Darker green on hover */
+}
+
+/* Project Cards Grid */
+#project-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    /* Space between grid items */
+    margin-top: 30px;
+}
+
+.project
+{
+    background-color: #001100;
+    /* Dark green background */
+    padding: 20px;
+    border-radius: 5px;
+    color: #00ff00;
+    /* Matrix green text */
+    box-shadow: 0 0 10px #00ff00;
+    /* Subtle glow effect */
+    transition: transform 0.3s ease;
+}
+
+.project h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p
+{
+    margin-bottom: 15px;
+}
+
+.project a
+{
+    display: inline-block;
+    margin-right: 10px;
+    color: #000;
+    /* Black text */
+    background-color: #00ff00;
+    /* Matrix green background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project a:hover
+{
+    background-color: #005500;
+    /* Darker green on hover */
+    color: #00ff00;
+    /* Matrix green text on hover */
+}
+
+.project:hover
+{
+    transform: scale(1.05);
+    /* Slightly enlarge card on hover */
+}
+
+
+/* Typing Effect Styles */
+#typing-effect
+{
+    background-color: #000;
+    /* Black background */
+    color: #00ff00;
+    /* Matrix green text */
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Courier New', Courier, monospace;
+    /* Matrix-like font */
+}
+
+#typing-text
+{
+    display: inline-block;
+    font-size: 32px;
+    border-right: 2px solid #00ff00;
+    /* Cursor */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink
+{
+    from
+    {
+        border-right-color: #00ff00;
+    }
+
+    to
+    {
+        border-right-color: transparent;
+    }
+}
+
+#typing-text::after
+{
+    content: '';
+    animation: blink 0.7s steps(2, start) infinite;
+}
